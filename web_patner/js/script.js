@@ -1,0 +1,1 @@
+jQuery(function(e){e(".header-button").on("click",function(){e("body").toggleClass("open")})});
