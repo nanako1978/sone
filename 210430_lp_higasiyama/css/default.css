@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* =====================================
+
+     RESET
+   
+======================================= */
+ 
+*{margin:0;padding:0;}
+h1,h2,h3,h4,h5 {font-size:100%;margin: 0;padding: 0;line-height:1.2em; font-weight:100;}
+div {margin: 0;padding: 0;}
+p {margin: 0;padding: 0;}
+a { color:#333; text-decoration:none;outline: none;}
+a:visited { color:#333; }
+a:hover { color: #333;}
+a:focus { color: #333; outline:outline: none;}
+table,th,td {margin: 0;padding: 0;font-size: inherit;font-size: 1em;border-collapse: collapse;}
+table{width:100%;}
+ul,ol,li,dl,dt,dd {margin: 0;padding: 0;list-style: none;list-style-position: outside;}
+img {margin: 0;padding: 0;border: none;line-height: 0;vertical-align: bottom;opacity:1\9; /* IE8 and below */}
+article,aside,canvas,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section,summary{display:block;}
+img {border:0;vertical-align:bottom;opacity:1\9; /* IE8 and below */}
+img {
+    max-width: 100%;
+    height: auto;
+}
+img[src$=".svg"] {
+    width: 100%;
+}
+
+/* =====================================
+
+     OPTION
+   
+======================================= */
+
+/*=========display=========*/
+.DisPlayNone { display:none; }
+.DisPlayBlock { display:block; }
+.DisPlayInline { display:inline; }
+
+/*=========float=========*/
+.FRight { float: right; }
+.FLeft { float: left; }
+
+/*=========clear=========*/
+.ClearBoth { clear:both; }
+.ClearRight { clear: right; }
+.ClearLeft { clear: left; }
+.ClearBox {
+	clear: both;
+	height: 50px;
+	overflow: hidden;
+}
+.ClearFix { zoom: 1; }
+.ClearFix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	line-height: 0;
+	content: ".";
+}
+/* no ie mac \*/
+* html .ClearFix { height: 1%; }
+.ClearFix { display: block; }
+
+/*=========マージン設定=========*/
+.MA0 { margin:0 !important;}
+
+.MT0 { margin-top:0;}
+.MT5 { margin-top:5px; }
+.MT10 { margin-top:10px; }
+.MT15 { margin-top:15px; }
+.MT20 { margin-top:20px; }
+.MT30 { margin-top:30px; }
+.MT40 { margin-top:40px; }
+
+.MR0 { margin-right:0 !important;}
+.MR5 { margin-right:5px; }
+.MR10 { margin-right:10px; }
+.MR15 { margin-right:15px; }
+.MR25 { margin-right:25px; }
+
+.MB0 { margin-bottom:0; }
+.MB5 { margin-bottom:5px; }
+.MB10 { margin-bottom:10px; }
+.MB15 { margin-bottom:15px; }
+.MB20 { margin-bottom:20px; }
+.MB30 { margin-bottom:20px; }
+.MB40 { margin-bottom:40px; }
+.MB50 { margin-bottom:50px; }
+.MB150 { margin-bottom:150px; }
+
+.ML0 { margin-left:0; }
+.ML5 { margin-left:5px; }
+.ML10 { margin-left:10px; }
+.ML15 { margin-left:15px; }
+.ML20 { margin-left:20px; }
+
+/*=========パディング設定=========*/
+.PA0 { padding:0;}
+
+.PT0 { padding-top:0; }
+.PT5 { padding-top:5px; }
+.PT10 { padding-top:10px; }
+.PT20 { padding-top:20px; }
+.PT40 { padding-top:40px; }
+
+.PR0 { padding-right:0; }
+.PR5 { padding-right:5px; }
+.PR10 { padding-right:10px; }
+.PR20 { padding-right:20px; }
+
+.PB0 { padding-bottom:0; }
+.PB5 { padding-bottom:5px; }
+.PB10 { padding-bottom:10px; }
+.PB20 { padding-bottom:20px; }
+
+.PL0 { padding-left:0; }
+.PL5 { padding-left:5px; }
+.PL10 { padding-left:10px; }
+.PL20 { padding-left:20px; }
+
+/*=========Font=========*/
+.FontBold { font-weight: bold; }
+.FontS{font-size:80%;line-height:1.2em;}
+.FontB{font-size:120%;}
+
+/*=========text-align=========*/
+.TACenter {	text-align: center; }
+.TARight { text-align: right; }
+.TALeft { text-align: left; }
+
+.W20 {width:20% !important}
+.W25 {width:25% !important}
+.W30 {width:30% !important}
+.W33 {width:33.3333% !important}
+.W35 {width:35% !important}
+.W40 {width:40% !important}
+.W45 {width:45% !important}
+.W48 {width:48% !important}
+.W50 {width:50% !important}
+.W55 {width:55% !important}
+.W60 {width:60% !important}
+.W63 {width:63% !important}
+.W65 {width:65% !important}
+.W70 {width:70% !important}
+.W75 {width:75% !important}
+.W80 {width:80% !important}
+.W90 {width:90% !important}
+.W100 {width:100% !important}
+@media screen and (max-width: 640px) {
+.W20,
+.W25,
+.W30,.W33,
+.W35,
+.W40,
+.W48,
+.W45,
+.W50,
+.W55,
+.W60,
+.W63,
+.W65,
+.W70,
+.W75,
+.W80,
+.W90,
+.W100 {width:100% !important}
+    }
+/* =======================================
+
+  BODY
+  
+   ======================================= */
+body{
+	font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+	line-height: 1.7em;
+	font-size:16px;
+	color:#333;
+	zoom: 1;
+}
+
+/* ================================================
+   その他
+   ==============================================*/
+.caption {text-align:left;font-size:90%;line-height: 130%;padding-top: 5px;}
+@media(min-width: 414px){
+  a[href^="tel:"]{
+    pointer-events: none;
+  }
+}

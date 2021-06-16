@@ -1,0 +1,73 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width:640px){
+/*==================================
+
+   共通CSS
+	
+==================================*/
+.wrap  { width:94%; margin:0 auto;}
+.sp_br{display: block;}
+
+#header ul {display: none;}
+.gotop a {display:none;}
+
+footer {padding:90px 15px 15px;}
+footer small{ text-align:center; display:block; padding-top: 40px}
+footer ul {margin:20px auto;}
+	
+.pc { display: none !important; }
+.sp { display: block !important; }	
+	
+/*==================================
+
+   TOP
+	
+==================================*/
+#main .txt_box{width:100%;}	
+#main .txt_box h2{width:84%;margin:20% auto 5%;}
+#main .txt_box p{width:70%;margin: 0 auto;}
+#main .date{bottom:-28px; width:35%;margin: 0 auto;right:0;left:0;}
+
+#Intro p {font-size: 1em;line-height: 1.6em;}
+#Intro h2 {font-size: 1.2em;line-height:1.6em;}
+#Intro h3 {font-size: 1.1em;}
+#Intro p {font-size: 1em; margin:40px auto 0;line-height:1.8em;}
+.deco_01{top:80px; right:3%;}
+.deco_02{top:-30px; left:2%;}
+.deco_03{bottom:-90px;left:10%;}
+	
+	
+#MENU {background: linear-gradient(180deg, #750d23 0%, #750d23 25%, #f3f2e7 25%, #f3f2e7 100%);}
+#MENU div {padding-bottom:120px;}
+#MENU div div {width:95%;margin: 40px auto;}
+#MENU .item {right:10px;bottom: -60px;}
+	
+#RESERVE h3 {margin:40px auto 20px;}
+#RESERVE ul {margin:40px auto 30px;font-size: 0.9em;}
+#RESERVE ul li {margin:0 auto 10px;}
+#RESERVE ul li+li {margin-left:0;}
+.deco_04{top:0px; right:3%;}
+.deco_05{top:-100px; left:2%;}
+.deco_06{bottom:-80px;left:6%;}
+	
+#MOVIE h3 {margin:60px auto 20px;}	
+	
+.photo .deco {top:-150px;left: 0;right: 0;margin: auto;width:90%;}
+.photo div div{width:50%;}
+.deco_07{top:-80px; right:4%;}
+.deco_08{bottom:-500px;left:8%;}
+	
+/*ボタン*/
+a.btn {width:310px;}
+a.btn_02 {}
+a.btn_03 {font-size: 1em;border-radius:80px;}
+}	
+
+@media screen and (max-width:480px){
+#sp_menu{position: fixed;bottom: 0; right: 0;width: 100%;display: block;border-top:1px solid #FFF;}
+#sp_menu ul{list-style: none;display:flex;}
+#sp_menu ul li{ margin:0px;padding:0px;width: 50%;background:#750d23;font-size: 1.2em;text-align: center;}	
+#sp_menu ul li a{cursor: pointer;display: block;color: #fff;padding:15px 0;}	
+}	

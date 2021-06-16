@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==================================
+
+   共通CSS
+	
+==================================*/
+.wrap {max-width: 1110px; margin:0 auto; clear:both;}
+
+#header .wrap{ padding:10px 0; position: relative;}
+#header h1{text-align: center;}
+#header ul {position: absolute;top:15px; right:10px;}
+
+.sns_nav {display: flex;width: 110px;}
+.sns_nav li:first-child{margin-right:10px;}
+
+footer {clear:both; padding-top:150px;background:#f3f2e7;text-align: center;}
+footer small{ text-align:center; display:block; padding-top: 40px}
+footer ul {margin:20px auto;}
+
+.fade_01{ opacity:0}
+/*TOPへ戻るボタン*/
+.gotop {position:relative;width:96%;max-width:1000px;height:0;margin:0 auto;display:none;}
+.gotop a {position: fixed;bottom:20px;left:auto;display: block;margin-left:1060px;}
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+.fade_02,.fade_03{opacity:0;}
+
+/*==================================
+
+   TOP
+	
+==================================*/
+
+#main .flexslider{position: relative;}
+#main .txt_box{position: absolute;top: 0;z-index:1000;text-align: center;width: 100%;}
+#main .txt_box h2{margin:6% auto 3%;width:40%;}
+#main .txt_box p{width:36%;margin: 0 auto;}
+#main .date{position: absolute;bottom:10px; right:8%; width:18%;z-index:10;}
+#main .line{position: absolute;bottom: 0;width: 100%;z-index:9;}
+#anim_01,#anim_02,#anim_03,.fade{opacity: 0}
+
+#Intro {background: #750d23;color: #FFF;text-align: center;width: 100%;position: relative;}
+#Intro h2 {font-size: 1.6em;font-weight:600; margin:0px auto 15px; padding-top: 60px;line-height: 2em;
+    height: auto;}
+#Intro h3 {font-size: 1.2em;font-weight:600
+    height: auto;}
+#Intro p {font-size: 1.2em; margin: 60px auto 0; padding-bottom: 50px;line-height: 2.5em;}
+
+.deco_01{position: absolute;top:25px; right:3%;}
+.deco_02{position: absolute;top:-10%; left:4%;}
+.deco_03{position: absolute;bottom:-120px;left:20%;}
+
+#MENU {color: #FFF;text-align: center; background: linear-gradient(180deg, #750d23 0%, #750d23 40%, #f3f2e7 40%, #f3f2e7 100%);}
+#MENU div {display: inline-block;padding-bottom: 60px;}
+
+#MENU h3 {margin:40px auto 30px;}
+#MENU div div {background: #FFF;width:540px;color: #333333;vertical-align:top;height: 700px;position: relative;margin: 30px 7px 60px;display: inline-block}
+
+#MENU h4 {margin:40px auto 10px;}
+#MENU h5 {margin: 0 auto 30px;font-weight:600;}
+#MENU p span {font-size: 2.0em;font-weight: 600; color: #E3096E; font-family: "Palatino Linotype", "Book Antiqua", Palatino, "serif"}
+#MENU .price {font-size: 1.2em;font-weight: 300}
+#MENU ul {border-top:1px solid #bea46b;display: block; padding: 20px;}
+#MENU ul li span {display: block; color: #bea46b;font-weight:600;}
+#MENU .item { position: absolute;right:40px;bottom: -60px;}
+
+#RESERVE{text-align: center;position: relative;}
+#RESERVE .item {position: absolute;top: -100px;left: 0;right: 0;margin: auto;}
+#RESERVE h3 {margin:40px auto 40px;}
+#RESERVE ul {margin: 0 auto;}
+#RESERVE ul li {display: inline-block;margin:10px;}
+.deco_04{position: absolute;top:20px; right:6%;}
+.deco_05{position: absolute;top:-100px; left:4%;}
+.deco_06{position: absolute;bottom:-150px;left:30%;}
+
+#MOVIE{text-align: center;clear: both;}
+#MOVIE h3 {margin:150px auto 60px;}
+
+.youtube {position: relative;width: 100%;padding-top: 56.25%;}
+.youtube iframe {position: absolute;top: 0;right: 0;width: 100%;height: 100%;}
+
+.photo{position: relative; margin:200px auto;}
+.photo .deco {position:absolute;top: -150px; left: 60px;}
+.photo div div{width: 25%; float: left;background:#750d23;}
+.photo img{width:100%;}
+
+.deco_07{position: absolute;top:-120px; right:4%;}
+.deco_08{position: absolute;bottom:-300px;left:20%;}
+
+/*ボタン*/
+a.btn {background:#750d23;color: #fff;padding:20px 0;width: 445px;text-decoration: none;border-radius: 50px;font-size: 1.3em;display: inline-block;cursor: pointer;
+  background-size: 200% 100%;
+    -webkit-transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 2s, background-color .5s ease;
+    transition: background-position .3s cubic-bezier(0.19, 1, 0.22, 1) .1s, color .5s ease 2s, background-color .5s ease;}
+
+a.btn:hover {background-color:#000;background-position: -100% 100%;}
+
+a.btn_02 {background:#bb9f54;}
+a.btn_02:hover {background-color:#000;background-position: -100% 100%;}
+
+
+a.btn_03 { background:#000;}
+a.btn_03:hover {background-color:#bb9f54;background-position: -100% 100%;}
+
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background:#750d23;
+  z-index:10000;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+#sp_menu{display: none;}
